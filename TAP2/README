@@ -1,0 +1,22 @@
+
+# LABORATORY 2:  Java 8
+
+------------------------------------------
+
+
+ http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html CLOSURE TUTORIAL
+ http://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html CLOSURE APIS
+ http://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html   STREAM APIS
+
+1. Map in Java (map,map2)
+2. Java 1.5 (other)
+3. Generics (generics,stacks)
+4. Functional Java 8 and closures (functional)
+5. Default methods (defaultmethods)
+
+
+
+
+Exercise 1: Implement filter function and examples with closures
+Exercise 2: Sort a collection of Animals by age using closures
+
