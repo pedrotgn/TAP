@@ -1,13 +1,14 @@
 
-# LABORATORY 3:  INHERITACE AND POLYMORPHISM
+# LABORATORY 1:  INHERITACE AND POLYMORPHISM
 
 ------------------------------------------
 
-1.	Object class (cars)
+1.  Object class (cars)
 2.  Lists and Maps (structures)
-3.	Inheritance, polymorphism and dynamic bonds (farm).
+3.  Inheritance, polymorphism and dynamic bonds (farm).
 4.	Abstract inheritance (inheritance).
 5.	Interfaces (stacks, interfaces)
+6.  Exception sample (exception)
 6.	Javadoc, Input/Output, Serialization (others)
 
 
