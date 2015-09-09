@@ -1,0 +1,46 @@
+
+# LABORATORY 3:  INHERITACE AND POLYMORPHISM
+
+------------------------------------------
+
+1.	Object class (cars)
+2.  Lists and Maps (structures)
+3.	Inheritance, polymorphism and dynamic bonds (farm).
+4.	Abstract inheritance (inheritance).
+5.	Interfaces (stacks, interfaces)
+6.	Javadoc, Input/Output, Serialization (others)
+
+
+#### Proposed exercises
+
+1. Bank Problem
+
+This is the problem of modeling a bank. The bank has a list of accounts and
+a list of customers. Customers have their ID, name, address and
+phone number. Each account can belong to only one customer.
+
+In each account we can deposit money, withdraw money, check balances, change the client,
+and perform a monthly revision. All accounts have a commission of 10 euros.
+The monthly revision does the following:
+
+balance = balance + balance * interest_rate - accout_comission
+
+On a bank we can carry out a monthly revision of all accounts of it.
+
+There are four types of accounts: CheckingAccount (CA), SaveAccount (SA), InvestFund (IF) and BonusAccount (BA).
+The CheckingAccount has an interest of 0.1, SaveAccount has 0.2, IF has 0.34, and BA 0.6.
+
+We cannot retrieve money from IF.
+We cannot retrieve money from any account if there is nof money.
+The monthly review of the CA account does not pay commission.
+
+Implement a lottery for the bank class: it will give a random prize to one of the accounts (300 euros) form.
+
+Generate the Javadoc of this problem. Finally, allow the storage and recovery of the bank of a serialized file.
+
+
+The problem must be implemented in Java, and create a test to check the functionality of the classes.
+In particular, show the balances before and after a monthly revision.
+No creation of graphical or textual interface is required.
+
+
