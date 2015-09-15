@@ -5,13 +5,13 @@ TAP 3: DESIGN PATTERNS
 
 
 
-  1. Singleton
-  2. Adapter
-  3. Proxy
-  4. Composite
-  5. Observer
-  6. Strategy
-  7. Template
-  8. Visitor
+  1. Singleton: http://www.tutorialspoint.com/design_pattern/singleton_pattern.htm
+  2. Adapter: http://www.tutorialspoint.com/design_pattern/adapter_pattern.htm
+  3. Proxy: http://www.tutorialspoint.com/design_pattern/proxy_pattern.htm
+  4. Composite: http://www.tutorialspoint.com/design_pattern/composite_pattern.htm
+  5. Observer: http://www.tutorialspoint.com/design_pattern/observer_pattern.htm
+  6. Strategy: http://www.tutorialspoint.com/design_pattern/strategy_pattern.htm
+  7. Template: http://www.tutorialspoint.com/design_pattern/template_pattern.htm
+  8. Visitor: http://www.tutorialspoint.com/design_pattern/visitor_pattern.htm
 
 
