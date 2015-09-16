@@ -7,7 +7,7 @@
 2.  Lists and Maps (structures)
 3.  Inheritance, polymorphism and dynamic bonds (farm).
 4.  Abstract inheritance (inheritance).
-5.	Interfaces (stacks, interfaces)
+5.  Interfaces (stacks, interfaces)
 6.  Exception sample (exception)
 7.  Javadoc, Input/Output, Serialization (others)
 
@@ -35,10 +35,15 @@ We cannot retrieve money from IF.
 We cannot retrieve money from any account if there is nof money.
 The monthly review of the CA account does not pay commission.
 
-Implement a lottery for the bank class: it will give a random prize to one of the accounts (300 euros) form.
+Optional:
+------------------------------------
+Implement a lottery for the bank class: it will give a random prize to one of the accounts (300 euros).
 
-Generate the Javadoc of this problem. Finally, allow the storage and recovery of the bank of a serialized file.
+Generate the Javadoc of this problem. Finally, allow the storage and recovery of the bank from a serialized file.
 
+Use Dictionaries to index accounts by Id. Show how they can be retrieved by id.
+
+Add a method to Bank enabling to show accounts ordered by name of the owner, or by money in their balance.
 
 The problem must be implemented in Java, and create a test to check the functionality of the classes.
 In particular, show the balances before and after a monthly revision.
