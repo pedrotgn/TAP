@@ -19,6 +19,7 @@
 
 Exercise 1: Implement filter function in Java.
 Exercise 2:  Binary Search Tree
+https://en.wikipedia.org/wiki/Binary_search_tree
 
 A BSTree is a tree with two children: left one  and right one.
 It must meet the property that each node of the tree contains an element that is higher than
@@ -36,7 +37,7 @@ between nodes of the tree.
 2) Make the BSTree iterable with the new loop of JDK 1.5
 
 3) Make another version of BSTree which will not pass the Comparator in the constructor.
-Instead assume that the elements containing the tree implement the Comparable interface. 
+Instead assume that the elements containing the tree implement the Comparable interface.
 
 Example Main:
  BSTree<Integer> tree = new BSTree<Integer>(new Comparaint());
