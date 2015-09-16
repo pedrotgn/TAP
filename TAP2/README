@@ -39,6 +39,11 @@ between nodes of the tree.
 3) Make another version of BSTree which will not pass the Comparator in the constructor.
 Instead assume that the elements containing the tree implement the Comparable interface.
 
+4) Create a BSTree of Cars in a Main.
+
+5) Subclass BSTree using bounded type parameters to create a BSCarTree. Create a method in Car called claxon that prints
+ "MEEEC". Then create a method in BSCarTree that invokes claxon in the tree of cars in a recursive way. 
+
 Example Main:
  BSTree<Integer> tree = new BSTree<Integer>(new Comparaint());
  tree.insert(5);
