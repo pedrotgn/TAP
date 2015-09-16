@@ -36,7 +36,7 @@ between nodes of the tree.
 2) Make the BSTree iterable with the new loop of JDK 1.5
 
 3) Make another version of BSTree which will not pass the Comparator in the constructor.
-Instead assume that the elements containing the tree implement the Comparable interface. (2 points)
+Instead assume that the elements containing the tree implement the Comparable interface. 
 
 Example Main:
  BSTree<Integer> tree = new BSTree<Integer>(new Comparaint());
