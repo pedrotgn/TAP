@@ -18,6 +18,11 @@
 
 
 Exercise 1: Implement filter function in Java.
+
+ odd x = (x%2)!=0
+ filter ([1,2,3,4],odd) ->  [1,3]
+ 
+
 Exercise 2:  Binary Search Tree
 https://en.wikipedia.org/wiki/Binary_search_tree
 
