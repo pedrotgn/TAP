@@ -42,7 +42,7 @@ Instead assume that the elements containing the tree implement the Comparable in
 4) Create a BSTree of Cars in a Main.
 
 5) Subclass BSTree using bounded type parameters to create a BSCarTree. Create a method in Car called claxon that prints
- "MEEEC". Then create a method in BSCarTree that invokes claxon in the tree of cars in a recursive way. 
+ "MEEEC". Then create a method in BSCarTree that invokes claxon in the tree of cars in a recursive way.
 
 Example Main:
  BSTree<Integer> tree = new BSTree<Integer>(new Comparaint());
@@ -57,4 +57,12 @@ Example Main:
    System.out.println(elem);
 
 
+Exercise 3: We will import information from the accounts.txt file in CSV format (Comma separated values). Use TAP1/other/Tokens.
+Import this information in a List of Accounts where the four parameters correspond to:
+  id :String, owner:String, type:enum[IF,CA,BA,SA], balance:double
+Perform the following operations:
+ Use stream.map to increment the balance of all accounts in 10 euros
+ Use stream.filter to obtain all account of type IF
+ Use stream.max to obtain the account with the highest balance
+ Combine filter and max to obtain the IF account with higher balance
 
