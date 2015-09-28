@@ -8,7 +8,7 @@ import java.util.function.Function;
 /**
  * Created by pedro on 9/2/14.
  */
-public class Map {
+public class Map2 {
 
 
     public static <T> List<T> map(List<T> list, Function<T,T> f) {
@@ -23,7 +23,7 @@ public class Map {
         List<String> elems = new LinkedList<>();
         elems.add("tap");
         elems.add("lp");
-        List <String> result = Map.map(elems, (String p) -> p.toUpperCase());
+        List <String> result = Map2.map(elems, (String p) -> p.toUpperCase());
         for (String elem:result)
             System.out.println(elem);
 

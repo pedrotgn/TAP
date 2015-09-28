@@ -4,10 +4,21 @@ package functional;
  * Created by pedro on 7/17/14.
  */
 public class Animal {
-    public Animal(int age) {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Animal(String name,int age) {
+        this.name = name;
+
         this.age = age;
     }
 
+    private String name;
     private int age;
 
     public void talk (){
