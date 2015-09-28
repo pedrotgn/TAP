@@ -45,17 +45,20 @@ public class Streams2 {
         int total = people.stream()
                 .collect(Collectors.summingInt(Animal::getAge));
         System.out.println("cnt:"+total);
-/*
-        // Group employees by department
-        Map<Department, List<Employee>> byDept
-                = employees.stream()
-                .collect(Collectors.groupingBy(Employee::getDepartment));
 
-        // Compute sum of salaries by department
-        Map<Department, Integer> totalByDept
-                = employees.stream()
-                .collect(Collectors.groupingBy(Employee::getDepartment,
-                        Collectors.summingInt(Employee::getSalary)));*/
+        // Group employees by department
+        List<Person> persons = Person.createShortList();
+        Map<Gender, List<Person>> byGender
+                = persons.stream()
+                .collect(Collectors.groupingBy(Person::getGender));
+        byGender.get(Gender.FEMALE).forEach(System.out::println);
+
+       // Compute sum of ages by age
+        Map<Gender, Integer> totalAge
+                = persons.stream()
+                .collect(Collectors.groupingBy(Person::getGender,
+                        Collectors.summingInt(Person::getAge)));
+        System.out.println("age summation of olf males:"+totalAge.get(Gender.MALE));
 
         // Partition students into passing and failing
         Map<Boolean, List<Animal>> oldAnimals =

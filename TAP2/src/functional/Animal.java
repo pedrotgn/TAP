@@ -4,6 +4,14 @@ package functional;
  * Created by pedro on 7/17/14.
  */
 public class Animal {
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     public String getName() {
         return name;
     }

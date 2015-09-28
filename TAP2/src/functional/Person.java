@@ -12,7 +12,16 @@ public class Person {
   private String phone;
   private String address;
 
- public Person(String givenName,String surName,int age, Gender gender, String eMail,String phone,String address){
+    @Override
+    public String toString() {
+        return "Person{" +
+                "givenName='" + givenName + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                '}';
+    }
+
+    public Person(String givenName,String surName,int age, Gender gender, String eMail,String phone,String address){
      this.givenName=givenName;
      this.surName=surName;
      this.age=age;
@@ -22,8 +31,11 @@ public class Person {
      this.address=address;
  }
 
+    public Gender getGender() {
+        return gender;
+    }
 
-  public String getSurName(){
+    public String getSurName(){
     return surName;
   }
   
@@ -32,7 +44,11 @@ public class Person {
       "Name: " + givenName + " " + surName);
   }
 
-  public static List<Person> createShortList(){
+    public int getAge() {
+        return age;
+    }
+
+    public static List<Person> createShortList(){
     List<Person> people = new ArrayList<>();
     
     people.add(
@@ -48,7 +64,7 @@ public class Person {
       new Person("James","Johnson",45,Gender.MALE,"james.johnson@example.com","333-456-1233","201 2nd St, New York, NY 12111"));
     
     people.add(
-      new Person("Joe","Bailey",67,Gender.MALE,"joebob.bailey@example.com","112-111-1111","111 1st St, Town, CA 11111"));
+      new Person("Joe","Bailey",67,Gender.FEMALE,"joebob.bailey@example.com","112-111-1111","111 1st St, Town, CA 11111"));
 
     people.add(
       new Person("Phil","Smith",55,Gender.MALE,"phil.smith@example.com","222-33-1234","22 2nd St, New Park, CO 222333"));
