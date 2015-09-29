@@ -28,39 +28,38 @@ public class Streams2 {
         people.add(a6);
 
 
-        // Accumulate names into a List
+
         List<String> list = people.stream().map(Animal::getName).collect(Collectors.toList());
 
-        // Accumulate names into a TreeSet
+
         Set<String> set = people.stream().map(Animal::getName).collect(Collectors.toCollection(TreeSet::new));
         set.forEach(System.out::println);
 
-        // Convert elements to strings and concatenate them, separated by commas
         String joined = people.stream()
                 .map(Object::toString)
                 .collect(Collectors.joining(", "));
 
         System.out.println(joined);
-        // Compute sum of salaries of employee
+
         int total = people.stream()
                 .collect(Collectors.summingInt(Animal::getAge));
         System.out.println("cnt:"+total);
 
-        // Group employees by department
+
         List<Person> persons = Person.createShortList();
         Map<Gender, List<Person>> byGender
                 = persons.stream()
                 .collect(Collectors.groupingBy(Person::getGender));
         byGender.get(Gender.FEMALE).forEach(System.out::println);
 
-       // Compute sum of ages by age
+
         Map<Gender, Integer> totalAge
                 = persons.stream()
                 .collect(Collectors.groupingBy(Person::getGender,
                         Collectors.summingInt(Person::getAge)));
         System.out.println("age summation of olf males:"+totalAge.get(Gender.MALE));
 
-        // Partition students into passing and failing
+
         Map<Boolean, List<Animal>> oldAnimals =
                 people.stream()
                         .collect(Collectors.partitioningBy(s -> s.getAge() >=30));
