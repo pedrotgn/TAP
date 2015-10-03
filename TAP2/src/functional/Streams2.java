@@ -1,6 +1,11 @@
 package functional;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import java.util.Set;
+
 import java.util.stream.Collectors;
 
 /**
@@ -32,7 +37,8 @@ public class Streams2 {
         List<String> list = people.stream().map(Animal::getName).collect(Collectors.toList());
 
 
-        Set<String> set = people.stream().map(Animal::getName).collect(Collectors.toCollection(TreeSet::new));
+
+        Set<String> set = people.stream().map(Animal::getName).collect(Collectors.toCollection(java.util.TreeSet::new));
         set.forEach(System.out::println);
 
         String joined = people.stream()
