@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.StringTokenizer;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -27,7 +28,7 @@ public class Tokens {
         while ((line = dis.readLine()) != null) {
            StringTokenizer tokens = new StringTokenizer(line, ",");
             while (tokens.hasMoreTokens()) {
-                Account c = new Account(tokens.nextToken(), tokens.nextToken(), tokens.nextToken(), new Double(tokens.nextToken()).doubleValue());
+                Account c = new Account(tokens.nextToken(), tokens.nextToken(), tokens.nextToken(), Double.parseDouble(tokens.nextToken()));
                 list.add(c);
             }
         }
@@ -38,19 +39,18 @@ public class Tokens {
             System.out.println(acc);
 
         System.out.println("Exercise 1: MAP");
-        list.stream().map((Account c) -> {
+        List<Account> result0 = list.stream().map((Account c) -> {
             c.deposit(100);
             return c;
-        });
-        list.forEach(e -> System.out.println(e));
+        }).collect(Collectors.toList());
+        result0.forEach(e -> System.out.println(e));
 
         System.out.println("Exercise 2: FILTER");
         Stream<Account> result = list.stream().filter(acc -> acc.getType().equals(AccType.IF));
         result.forEach(e -> System.out.println(e));
 
-        System.out.println("Exercise 2: FILTER");
 
-        System.out.println("Exercise 2: MAX");
+        System.out.println("Exercise 3: MAX");
         Stream<Account> result1 = list.stream().filter(acc -> acc.getType().equals(AccType.IF));
         Account resultacc = result1.max((e1,e2)->Double.compare(e1.getBalance(),e2.getBalance())).get();
         System.out.println(resultacc);
