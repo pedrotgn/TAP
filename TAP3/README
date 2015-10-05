@@ -34,9 +34,11 @@ Exercises:
 
    3. toList(): It returns one list of all components (can be files or directories) that are contained in this directory (include subdirectories).
 
-   4. size(): It returns the  total size  of all files  contained in this directory (include subdirectories).
 
-   5. search(name): It returns a list of files whose name coincides with name in all sub tree of this directory.
+   4. search(name): It returns a list of files whose name coincides with name in all sub tree of this directory.
+
+   5. search(Predicate): It returns the  list of elements that match this predicate (include subdirectories).
+      For example, obtain all components with size>200, or obtain all components whose name begins with "r". Use closures.
 
    6. toString(): Redefine toString method of files and directories in order to print on screen the entire path of every file and directory.
 
