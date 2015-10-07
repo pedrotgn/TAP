@@ -1,0 +1,9 @@
+alumno1,4,6,7
+alumno2,6,6,6
+alumno3,7,8,9
+alumno4, 9,9,9
+alumno5,10,10,10
+alumno6,2,3,4
+alumno7,1,1,1
+alumno9,5,5,5
+alumno10,3,4,5
