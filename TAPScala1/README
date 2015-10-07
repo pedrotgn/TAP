@@ -1,0 +1,23 @@
+
+Scala Lab
+-------------------------------------
+
+1. Hello, Types, Conditionals
+2. Functions, Curry, Closures, Closures2
+3. Classes, Animals, Inheritance, MultipleInheritance
+4. PatternMatching[1,2,3], Some
+5. CaseClasses
+6. Lists, ListFunctions, ListFunctions2,Maps
+7. Enumerations
+8.Files
+
+Exercises
+----------------------------------------
+Exercise 1: We will import information from the accounts.txt file in CSV format (Comma separated values). Use Files.
+Import this information in a List of Accounts where the four parameters correspond to:
+  id :String, owner:String, type:enum[IF,CA,BA,SA], balance:double
+Perform the following operations:
+ Use map to increment the balance of all accounts in 10 euros
+ Use filter to obtain all account of type IF
+ Use max to obtain the account with the highest balance
+ Combine filter and max to obtain the IF account with higher balance
