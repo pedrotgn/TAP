@@ -2,6 +2,7 @@
  * Created by pedro on 7/29/15.
  */
 
+import scala.collection.mutable.ListBuffer
 // http://www.tutorialspoint.com/scala/scala_lists.htm
 
 object Lists {
@@ -25,6 +26,18 @@ object Lists {
     for (elem <- list) println(elem)
 
     println(fruit.maxBy(_.length))
+
+    println("Buffer:")
+    var l2  = new ListBuffer[String]()
+    fruit.foreach(l2+=_)
+    l2-="oranges"
+    l2.foreach(println)
+
+    var l3 = ListBuffer(2,34,4,5,6,6)
+    l3+=999
+    l3.foreach(println)
+
+
 
   }
 }
