@@ -6,7 +6,7 @@ Scala Lab
 2. Functions, Curry, Closures, Closures2
 3. Classes, Animals, Inheritance, MultipleInheritance
 4. PatternMatching[1,2,3], Some
-5. CaseClasses
+5. CaseClasses, Generics
 6. Lists, ListFunctions, ListFunctions2,Maps
 7. Enumerations
 8.Files
