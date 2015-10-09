@@ -1,9 +1,9 @@
 package observer;
 
-
-public interface Observer<T> {
-
-	void notifyAdd(T elem);
-	void notifyRemove(T elem);
-
+/**
+ * Created by pedro on 10/9/15.
+ */
+public abstract class Observer {
+    protected Subject subject;
+    public abstract void update();
 }

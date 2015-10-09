@@ -1,8 +1,6 @@
 package solutions.observer;
 
-import observer.Observer;
-import observer.ObserverList;
-import observer.RepeatedObserverException;
+
 
 import java.util.Iterator;
 import java.util.Vector;

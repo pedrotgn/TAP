@@ -1,7 +1,7 @@
 package solutions.observer;
 
 
-import observer.Observer;
+
 
 public class PrinterObserver<T> implements Observer<T> {
 

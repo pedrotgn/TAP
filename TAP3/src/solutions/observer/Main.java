@@ -20,7 +20,7 @@ public class Main {
 			strings.register(new PrinterObserver<String>());
 			strings.register(new BackupObserver<String>());
 
-		} catch (observer.RepeatedObserverException e) {
+		} catch (RepeatedObserverException e) {
 			System.out.println("Existent Observer Exception....");
 			System.out.println("   '---> " + e.getMessage());
 		}
@@ -38,7 +38,7 @@ public class Main {
 
 		try {
 			strings.register(new BackupObserver<String>());
-		} catch (observer.RepeatedObserverException e) {
+		} catch (RepeatedObserverException e) {
 			System.out.println("CExistent Observer...");
 			System.out.println("   '---> " + e.getMessage());
 		}
@@ -52,7 +52,7 @@ public class Main {
 		try {
 			integers.register(new PrinterObserver<Integer>());
 			integers.register(new BackupObserver<Integer>());
-		} catch (observer.RepeatedObserverException e) {
+		} catch (RepeatedObserverException e) {
 			System.out.println("Existent Observer.");
 			System.out.println("   '---> " + e.getMessage());
 		}

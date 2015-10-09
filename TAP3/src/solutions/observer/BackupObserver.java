@@ -1,6 +1,6 @@
 package solutions.observer;
 
-import observer.Observer;
+
 
 import java.util.Vector;
 
