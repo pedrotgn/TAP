@@ -61,3 +61,36 @@ Exercises:
    2. Enable the iteration over directories with the for clause (Iterable)
    3. Use Comparator<T>, Collections.sort and Closures to order by name the list that is obtained by toList.
 
+2. FileSystem combining composite and visitor
+
+The problem of the previous solution is that every new operation that we want to apply to the entire tree must be added to the parent interface AComponent.
+This reminds us the classical Fragile Base Class problem of modifying parent classes in OOP.
+To solve this problem and enable adding new operations in a flexible way, combine the Visitor and Composite patterns. Since every node in the structure can be visited,
+we will be able to add any operation very easily using Visitors.
+Convert all operations [1-6] to Visitors and demonstrate them.
+
+
+3. ObserverList
+
+The problem is to create an ObserverList collection that implements the observer design pattern.
+It will notify of  changes to the observers (notifyAdd and notifyRemove methods)
+when the state of ObserverList is modified (add or remove elements).
+The collection must be Iterable and generic.
+
+Steps:
+
+  1. Define observer contract
+  2. Implement PrinterObserver to show by standard output the element and the completed operation (add or remove).
+  3. Implement BackupObserver  to keep a copy of each added element and this function and remove then when was indicated.
+  4. Make ObservgerList Iterable
+  5. Implement ObserverList collection using parameteric polymorphism.
+  6. Throw AlreadyExistsObserverException exception
+  7. Create main class demonstrating all exercises
+
+
+
+
+
+
+
+
