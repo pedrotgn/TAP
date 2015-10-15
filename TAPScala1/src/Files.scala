@@ -18,6 +18,6 @@ object Files extends scala.App {
 
   iter.foreach((e:Array[String])=>{println("Account: ....");e.foreach(println)})
 
- 
+
 
 }

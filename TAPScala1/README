@@ -4,12 +4,13 @@ Scala Lab
 
 1. Hello, Types, Conditionals
 2. Functions, Curry, Closures, Closures2
-3. Classes, Animals, Inheritance, MultipleInheritance
+3. Classes, Objects, Parameters, Animals, Inheritance, MultipleInheritance
 4. PatternMatching[1,2,3], Some
 5. CaseClasses, Generics
 6. Lists, ListFunctions, ListFunctions2,Maps
 7. Enumerations
 8.Files
+
 
 Exercises
 ----------------------------------------
@@ -26,3 +27,9 @@ Perform the following operations:
  Use filter to obtain all account of kind IF
  Use max to obtain the account with the highest balance
  Combine filter and max to obtain the IF account with higher balance
+
+
+Refs
+---------------------------------------------
+Patterns in Scala:
+https://pavelfatin.com/design-patterns-in-scala/
