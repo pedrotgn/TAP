@@ -4,18 +4,17 @@ Scala Lab
 
 1. Hello, Types, Conditionals
 2. Functions, Curry, Closures, Closures2
-3. Classes, Objects, Parameters, Animals, Inheritance, MultipleInheritance
-4. PatternMatching[1,2,3], Some
-5. CaseClasses, Generics
-6. Lists, ListFunctions, ListFunctions2,Maps
-7. Enumerations
-8.Files
+3. PatternMatching[1,2,3], Some
+4. Lists, ListFunctions, Maps
+5. Classes, CaseClasses, Objects, Generics, ListFunctions2
+6. Animals, Inheritance, MultipleInheritance
+7. Files
 
 
 Exercises
 ----------------------------------------
 
-Exercise 1. Implement the composite patterns (FileSystem) in Scala
+Exercise 1. Implement the composite pattern (FileSystem) in Scala
 
 Exercise 2: We will import information from the accounts.txt file in CSV format (Comma separated values). Use Files.
 Import this information in a List of Accounts where the four parameters correspond to:
