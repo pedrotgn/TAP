@@ -39,5 +39,17 @@ object Lists {
 
 
 
+    var il1 = List(1,2,3)
+    il1 = il1:+34
+
+    il1 foreach println
+
+    il1 = 66::il1
+
+    il1 foreach println
+
+
+
+
   }
 }
