@@ -21,5 +21,14 @@ object Reduce {
 
     println(preduce (0,(x:Int,y:Int)=>x+y,List(1,2,3)))
 
+
+    println(List(1,2,3,4).foldRight (0) (sum))
+
+    println(List(1,2,3,4).foldLeft (0) (sum))
+
+
+
+
+
   }
 }

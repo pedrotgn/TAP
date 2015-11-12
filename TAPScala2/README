@@ -1,12 +1,12 @@
 Scala Lab 2
 ------------------------------------
 
-1. Generics: Generics, ListObject
-2. Recursion: Recursion, Recursion2, Recursion3, ListRecursion
-3. Higher Order Functions: Map, Reduce
-4. Recursive Data Structures: TreeSample
-5. For loops: forexpression,for2,for3
-6. Mataprogramming: AddingMethods
+1. Recursion: Recursion, Recursion2, Recursion3, ListRecursion
+2. Higher Order Functions: Map, Reduce
+3. Recursive Data Structures: TreeSample
+4. For loops: forexpression,for2,for3
+5. Mataprogramming: AddingMethods
+6. Testing (Test,SetTest,ConformanceTest,PMapTest)
 
 Exercises
 ----------------------------------------------
@@ -17,10 +17,11 @@ Exercises
   c) Show examples of max with ints and Humans
   d) Use curry and partial functions to define the function maxAge
 
-2. Implement the zip function:
+2. Implement the zip function (use generics!)
     zip List(1,2,3) List(4,5,6) -> List((1,4),(2,5),(3,6))
 
 3. Implement the functions filter, map, contains, and height for Trees (TreeSample)
    contains elem tree : Boolean
    height tree : Int
 
+4. Implement tests that check the correctness of exercises 2 and 3
