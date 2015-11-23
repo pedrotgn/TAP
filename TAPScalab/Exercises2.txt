@@ -1,0 +1,167 @@
+XERCISES:
+---------------------------------------
+
+
+-- Implement one function in high level named filter that accept two parameters:
+-- The first is a function with one polymorphic parameter that return one boolean value.
+-- The second is one polymorphic list
+-- The filter function return one list forming by elements of th original list
+-- The elements of this list has to accomplish the predicate established by function (first parameter)
+
+--Example: filter (isLessThan 3) [1,7,2,9,67,3];
+
+
+---------------------------------------
+
+
+-- Implement ZipWith function
+--zipWith:: (a -> b -> c) -> [a] -> [b] -> [c]
+--addition x y = x+y
+--Example: zipWith addition [1,2,3] [4,5,6]
+--[5,7,9]
+
+
+
+---------------------------------------
+
+
+-- Create 'divide' function that receive one list 'xs' and a condition 'f' and return (ys, zs).  Where
+-- 'ys' = first elements that accomplish condition
+-- 'zs' = rest of elements
+
+--Example: divide (<3) [1..5]
+--([1,2],[3,4,5]).
+
+
+
+---------------------------------------
+
+
+-- Implement "foldr_filter" that calculate one operation on all elements of the list that accomplish a specific condition
+
+-- foldr_filter has the form:  <foldr_filter  condition  operation initial_value  list>
+
+-- ej. foldr_filter (>4) (+) 0 [3,6,4,5] --> 11
+-- It add 5 and 6
+
+
+-- EXERCISES MAL, FILTER, FOLDR:
+-------------------------------------------------
+
+
+-- Create "count_car" function that contains like parameter one character and one list of strings and
+-- return the number of times that appear this character in string but that begin by this character.
+-- All strings are in lower case. Do that using MAP, FILTER AND FOLDR.
+
+-- ej . Main> count_car 'e' ["el","examen","esta","especialmente","escogido","entre","los","mas","elementales"]
+-- 15 :: Integer
+
+
+-------------------------------------------------
+
+
+-- Create "remove_primes" that receive one number and integer list and
+-- return the result of subtract all prime numbers that appear in list to the number.
+-- Use MAP, FILTER and FOLDR and "factorize" function as follows:
+-- Clue: The prime numbers are numbers whose length factoring is 1.
+
+-- ex. Main> remove_primes 100 [2,3,4,5,6,7,8,9,10]
+--           83 :: Integer
+
+
+-------------------------------------------------
+
+-- Using map, foldr and filter functions, create a "invest_word" that receive a text and
+-- return a new text with all words invested in its center.
+-- Use "invest_center" function.
+
+
+-- ex. Main> invest_word ["este","examen","de","haskell","es","muy","facil"]
+--     "etse eemaxn de hleksal es muy fical" :: [Char]
+
+-- ex. Main> invest_word ["dicen","que","si","tenemos","un","texto","con","las","palabras","separadas","y","cambiamos","el","orden","interno","manteniendo","la","primera","y","ultima","letra","podemos","ser","capaces","de","leerlo","entendiendo","el","mensaje"]
+-- "decin que si tomenes un ttxeo con las parbalas sadarapes y comaibmas el oedrn inretno mdneinetnao la premira y umitla lrtea pomedos ser cecapas de llreeo edneidnetno el mjasnee" :: [Char]
+
+
+-------------------------------------------------
+
+-- Using map, filter and foldr functions, create "operate_if" function that receive:
+-- one operation,
+-- initial value for operation,
+-- one condition that depends of two variables,
+-- one initial number for comparison and
+-- one list of binary numbers.
+-- This function operate all of binary numbers of the list if the numbers accomplish the condition.
+
+
+
+-- ex. Main> operate_if (+) 0 (>) 3 ["10","11","111","1110"]
+-- Addition of higher numbers than 3
+-- "10101" :: [Char]
+-- "111" + "1110" = "10101" (7+14=21)
+
+-- ex. Main> operate_if (*) 1 (\x y -> (mod x y) == 0) 2 ["10","11","111","1110"]
+-- Multiply pairs
+-- "11100" :: [Char]
+-- "10" * "1110" = "11100" (2*14=28)
+
+-- EXERCISES: APPLIED PARTIALLY FUNCTIONS
+---------------------------------------------------
+
+
+-- Parametrize partly power function in order to calculate cube function
+
+
+---------------------------------------------------
+
+
+-- Test map function with different functions: Increase on one, multiply times 2, ...
+-- Create map_inc function in high level that parametrize partly the map.
+
+
+---------------------------------------------------
+
+
+-- Implement "add_pairs" parametrizing partly foldr_filter in order to that add couple numbers in one list. (Always begin from 0)
+
+-- ej. add_pairs [2,4,5,6]  --> 12  // It add 2,4 and 6
+
+
+---------------------------------------------------
+
+
+-- Implement "put_zeros" function that receive one number and return one 1 followed by number of 0 that is indicated.
+-- Make it parametrizing partly the function "power".
+
+-- ex.   Main> put_zeros 4
+--             10000 :: Integer
+
+
+---------------------------------------------------
+
+
+-- Implement "equal_pos" function that receive two lists of integers (with the same number of elements) and return:
+-- those numbers that appear duplicate in the same position
+-- Or one 0 in those positions was different
+-- Make it parametrizing partly the function "power".
+
+
+-- Main> equal_pos [2,3,4,5] [2,4,3,5]
+--       [2,0,0,5] :: [Integer]
+
+
+---------------------------------------------------
+
+
+-- Create "count_to" function that receive one list of strings and return the addition of elements 'a'
+-- but only the words that begin with 'a'. Make it parametrizing partly the function "power".
+
+-- ej. Main> count_to ["un","anillo","para","atraerlos","a","todos","y","atarlos","en","las","tinieblas"]
+--     6 :: Integer
+
+---------------------------------------------------
+
+-- Define "less_hundred_primes" parametrizing partly the function "remove_primes" that it remove prime numbers of 100.
+
+-- ej. Main> less_hundred_primes [2,3,4,5,6]
+--     90 :: Integer
