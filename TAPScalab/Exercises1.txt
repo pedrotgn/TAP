@@ -15,43 +15,43 @@ List exercises using recursion
 ------------------------------------------------
 
 
--- Create list_integers(n, list) function. It return one list with integers including between 0 and n.
+-- Create list_integers(n, list) function. It returns one list with integers including between 0 and n.
 
 
 ------------------------------------------------
 
 
--- Create list_between(begin, end, listX) function. It return one list that contain integers between begin
--- and end of list listX.
+-- Create list_between(begin, end, listX) function. It returns one list that contains integers between begin
+-- and end of listX.
 
 
 ------------------------------------------------
 
 
--- Modify exercise 4 in order to only print the multiple of 2.
+-- Modify exercise 4 in order to only print the multiples of 2.
 
 
 ------------------------------------------------
 
 
--- Implement "digit" function that receives an integer and return a list of digits.
--- You do by cumulative and stack recursion.
+-- Implement "digit" function that receives an integer and returns a list of digits.
+-- Implement both tail and stack recursion modes.
 -- ex. digit 3645 --> [3,6,4,5]
 
 
 ------------------------------------------------
 
 
--- Implement "add_div" function that return the addition of all its divisors but excluding himself.
--- You do by cumulative and stack recursion.
+-- Implement "add_div" function that returns the addition of all its divisors but excluding himself.
+-- Implement both tail and stack recursion modes.
 
 
 ------------------------------------------------
 
 
--- Implement function "power" that receive one integer and the number that we want to raise.
+-- Implement function "power" that receives one integer and the number that we want to raise.
 -- It returns the result of applying the operation.
--- You have to make this function by stack recursion.
+-- Implement both tail and stack recursion modes.
 -- ex.   Main> power 3 4
 --             81 :: Integer
 
@@ -59,11 +59,11 @@ List exercises using recursion
 ------------------------------------------------
 
 
--- Implement a central function that receives a list by parameter and return one structure with three elements:
+-- Implement a central function that receives a list by parameter and returns one structure with three elements:
 -- The first is the first element of the list.
 -- The second is a list whose elements are lower than first element.
 -- The third is a list whose elements are higher than fist element.
--- Use cumulative recursion. The elements has to keep the initial order.
+-- Use tail recursion. The elements should keep the initial order.
 -- ex.   Main> central "362741"
 --             ('3',"21","674") :: (Char,[Char],[Char])
 
@@ -71,10 +71,10 @@ List exercises using recursion
 ------------------------------------------------
 
 
--- Implement "hexadecimal" function that receivse an integer and change to it corresponding hexadecimal number.
+-- Implement "hexadecimal" function that receives an integer and generates the corresponding hexadecimal number.
 -- (number in base 16 in the form of string).
--- You can use 'hexa x' function. From decimal number it return the string with his corresponding decimal number.
--- Use cumulative recursion.
+-- You can use 'hexa x' function. From decimal number it returns the string with his corresponding decimal number.
+-- Use tail recursion.
 
 
 
@@ -88,21 +88,21 @@ List exercises using recursion
 
 
 -- Implement "decimal" function that receives a String in form of hexadecimal number.
--- and return an integer with his corresponding decimal number.
--- You can use 'deci x' function. From one string it return his decimal number associated.
+-- and returns an integer with his corresponding decimal number.
+-- You can use 'deci x' function. From one string it returns his decimal number.
 -- Use stack recursion.
 
 
 
 
--- CLUE:  You can use mirror function for change the order of String
+-- CLUE:  You can use mirror function to change the order of String
 -- ex. Main > decimal "3a2"
 --            930 :: Integer
 
 ------------------------------------------------
 
 
--- Implement "prime" function that receives one integer and return a boolean that indicate if the number is prime or not.
+-- Implement "prime" function that receives one integer and returns a boolean that indicates if the number is prime or not.
 -- ex. Main> prime 127
 --     True :: Bool
 
@@ -110,7 +110,7 @@ List exercises using recursion
 ------------------------------------------------
 
 
--- Implement "factorize" function that receives one integer number ans return a list with his ordered factoring.
+-- Implement "factorize" function that receives one integer number and returns a list with his ordered factoring.
 -- (the list of minimum prime numbers that it can factorize).
 -- ej. Main> factorize 8
 --     [2,2,2] :: [Integer]
@@ -122,8 +122,8 @@ List exercises using recursion
 
 
 -- Implement expand_pow_2" that receives a integer list with at least one element.
--- If size of the list isn't equal to a power of 2 (0,1,2,4,8,16,...). It expand the list adding 0 until
--- it has power of 2 size. -- You can use "length" function of the system. (2 points)
+-- If size of the list isn't equal to a power of 2 (0,1,2,4,8,16,...). It expands the list adding 0 until
+-- it has power of 2 size. -- You can use "length" function.
 
 -- ex. Main> expand_pow_2 [1,2,3,4]
 --          [1,2,3,4] :: [Integer]
@@ -134,7 +134,7 @@ List exercises using recursion
 ------------------------------------------------
 
 
--- Implement "order" function that receives a list of strings and return a list with all elements order alphabetically.
+-- Implement "order" function that receives a list of strings and returns a list with all elements ordered alphabetically.
 -- ex. Main> order_alph ["enjoy","this","day","until","one","exam","ruined","it"]
 --            [ "day", "enjoy", "exam", "it", " one", "ruined", "this","until"] :: [[Char]]
 
@@ -142,7 +142,7 @@ List exercises using recursion
 ------------------------------------------------
 
 -- Create "fact_stack" and "fact_cum" functions that receives an integer and return the result of apply factorial function.
--- The first is in stack recursion and the second is in cumulative recursion.
+-- The first is in stack recursion and the second is in cumulative or tail recursion.
 
                    
 -- ej. Main> fact_stack 4
@@ -154,8 +154,8 @@ List exercises using recursion
 ------------------------------------------------
 
 
--- Create "inverse_center" function that receives a String and return a new string that the first and
--- last letter keep in its position but the rest was reversed.
+-- Create "inverse_center" function that receives a String and returns a new string where the first and
+-- last letter keep their positions but the rest are reversed.
 
 -- ex. Main> inverse_center "haskell"
 --     "hleksal" :: [Char]   
@@ -166,10 +166,10 @@ List exercises using recursion
 ------------------------------------------------
 
 
--- Implement "binary" function that receive one integer and it convert the integer in its corresponding binary number
+-- Implement "binary" function that receives one integer and it converts the integer in its corresponding binary number
 -- (number in base 2 as String)
--- You can use 'char x' function that receive one number end return its character.
--- Use cumulative recursion.
+-- You can use 'char x' function that receives one number end returns its character.
+-- Use tail recursion.
 
 
 -- ex. Main> binary 12
@@ -178,8 +178,8 @@ List exercises using recursion
 ------------------------------------------------
 
 
--- Implement "decimal" function that receives an String, in form of binary number, and return an integer with its corresponding decimal number.
--- You can use 'int x' function that receives a character and return its associated name.
+-- Implement "decimal" function that receives a String, in form of binary number, and returns an integer with its corresponding decimal number.
+-- You can use 'int x' function that receives a character and returns its associated int.
 -- Use stack recursion
 
 
@@ -193,8 +193,8 @@ List exercises using recursion
 ------------------------------------------------
 
 
--- Implement "addition_pow2" thar receives one number and return the same number in form of power of 2.
--- For simplify, we suppose that the value of higher power is 9
+-- Implement "addition_pow2" thar receives one number and returns the same number in form of power of 2.
+-- To simplify, we suppose that the value of the higher power is 9
 
 -- ex. Main> addition_pow2 0
 --     "0" :: [Char]    
@@ -207,8 +207,8 @@ List exercises using recursion
 ------------------------------------------------
 
 
--- Implement "next_prime" function that receives one integer and return the next prime number.
--- If we introduce one prime number, the result will be the next prime number, never the same number.
+-- Implement "next_prime" function that receives one integer and returns the next prime number.
+-- If we introduce one prime number, the result will be the next prime number, never the same one.
 
 -- ex. Main> next_prime 127
 --     131 :: Integer
@@ -217,7 +217,7 @@ List exercises using recursion
 ------------------------------------------------
 
 
--- Implement "order_letters" that receives one string and return other string with letters ordering alphabetically, removing blank space.
+-- Implement "order_letters" that receives one string and returns other string with letters ordered alphabetically, removing blank spaces.
 
 -- ex. Main> order_letter "The algorithm of order in Haskell is very important"
 -- "aaadeeeefghhhiiiiklllmmnnooooprrrrrssttttvy" :: [Char]
