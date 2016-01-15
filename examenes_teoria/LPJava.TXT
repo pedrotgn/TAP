@@ -1,0 +1,73 @@
+LENGUAJES DE PROGRAMACION 06/07
+
+Objetivo
+--------------
+Implementar un ObserverList
+
+
+Descripcion
+--------------
+Implementar una colección ObserverList que implemente el patrón de diseño Observer (registrar y desregistrar Observers) que permita notificar
+de cambios a los Observers (métodos notifyAdd y notifyRemove) cuando se modifique el estado de la ObserverList 
+en añadir y quitar elementos de ella (add o remove). Esta colección será iterable. Se debe mantener el orden de inserción. 
+Como es una lista (no un set) podrá contener elementos duplicados. En caso de existir duplicados, cuando se desee eliminar un elemento,
+sólo se eliminará la primera copia que se encuentre.
+
+A entregar
+--------------
+
+Parte obligatoria (6 puntos):
+
+* Definir el contrato Observer.
+
+* Implementar el PrinterObserver de forma genérica para que muestre por la salida estándar el elemento y la operación realizada (añadir o eliminar).
+
+* Implementar el BackupObserver de forma genérica para que mantenga una copia de cada elemento añadido y lo eliminará cuando así se lo indique, de
+igual modo que se comporta el ObserverList.
+
+* Definir el contrato de la colección ObserverList para que además sea iterable por los elementos que contiene (no observers). 
+Los elementos pueden ser de cualquier tipo.
+
+* Implementar la colección ObserverList que será genérica y parametrizable. Podéis utilizar la clase Java que creáis 
+conveniente para vuestra implementación.
+
+* Lanzar la excepción “ObservadorYaExistenteException” cuando se registre un observador que ya existía antes.
+
+* Construir un main para:
+   * Definir una ObserverList para String.
+      * Añadirle los observers PrinterObserver y BackupObserver.
+      * Añadirle los strings {"hola", "adios", "hello", "goodbye"} a la colección.
+   * Mostrar un ejemplo de recorrido por la colección usando el nuevo iterador for each de Java 1.5.
+   * Probar de añadir un segundo BackupObserver.
+   * Definir una nueva ObserverList para enteros.
+      * Añadirle los observers PrinterObserver y BackupObserver.
+      * Añadirlo los números { 4, 6, 3, 5, 4 }.
+   * Mostrar un ejemplo de recorrido por la colección usando el nuevo iterador for each de Java 1.5.
+   
+
+
+Parte opcional (4 puntos):
+
+* Definir el contrato de la colección ObserverStack. Ofrecerá los mecanismos push y pop para añadir y eliminar los
+elementos del ObserverStack, y permitirá ser iterable sobre estos. Ofrecerá al igual que ObserverList los dos métodos de 
+registro y desregistro de Observers, lanzando la excepción "ObservadorYaExistenteException" si se intenta registra 
+un Observer ya existente. Los elementos podrán ser de cualquier tipo.
+
+* Beneficiándonos de la implementación de la colección anterior ObserverList, implementar la ObserverStack. La implementación
+será genérica para cualquier tipo de elementos.
+
+* Montar un main para:
+   * Definir una ObseverStack para String.
+      * Añadirle los observers PrinterObserver y BackupObserver.
+      * Añadirle los strings {"hola", "adios", "hello", "goodbye"} a la colección.
+   * Mostrar un ejemplo de iteración (for each) sobre esta pila. 
+
+* Implementar una segunda TabuObserverStack para que sólo pueda contener Strings. Además, al insertar un nuevo elemento debe comprobarse
+si no contiene una expresión tabú, entre las cuales están las siguientes {"kk","med"}. En tal caso, no añadirlo.
+
+* Montar un main para:
+   * Definir una TabuObserverStack.
+      * Añadirle los observers PrinterObserver y BackupObserver.
+      * Añadirle los elementos {"hola que tal", "bien, pero tengo medio", "esto es una kk"}.
+   * Mostrar un ejemplo de iteración for each sobre esta pila. En este caso, sólo tiene que aparecer el "hola que tal".
+
