@@ -1,17 +1,20 @@
 package decorator;
 
-public class NitroDecorator extends CarDecorator{
+public class NitroDecorator extends Car{
+
+	private Car client;
 
 	public NitroDecorator(Car car) {
-		super(car);
+		super(car.getDescription(),car.getPrice());
+		client = car;
 	}
 	
 	public String getDescription() {
-		return (super.getDescription()+" with nitrous oxide system");
+		return (client.getDescription()+" with nitrous oxide system");
 	}
 	
 	public float getPrice() {
-		return (super.getPrice()+7000);
+		return (client.getPrice()+7000);
 	}
 
 }

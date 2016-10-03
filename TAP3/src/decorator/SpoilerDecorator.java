@@ -1,17 +1,20 @@
 package decorator;
 
-public class SpoilerDecorator extends CarDecorator{
+public class SpoilerDecorator extends Car{
+
+	private Car client;
 
 	public SpoilerDecorator(Car car) {
-		super(car);
+		super(car.getDescription(),car.getPrice());
+		client = car;
 	}
 	
 	public String getDescription() {
-		return (super.getDescription()+" with a spoiler");
+		return (client.getDescription()+" with a spoiler");
 	}
 	
 	public float getPrice() {
-		return (super.getPrice()+200);
+		return (client.getPrice()+200);
 	}
 
 }
