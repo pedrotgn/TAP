@@ -17,6 +17,9 @@ TAP 3: DESIGN PATTERNS
 Exercises:
 --------------
 
+0. Iterator. 
+   Modify the existing Iterator sample to use java,util.Iterable<T> and java.util.Iterator<T>
+
 
 1. FILESYSTEM
  ---------------------------------
