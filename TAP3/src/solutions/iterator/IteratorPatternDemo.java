@@ -1,4 +1,4 @@
-package iterator;
+package solutions.iterator;
 
 /**
  * http://www.tutorialspoint.com/design_pattern/iterator_pattern.htm

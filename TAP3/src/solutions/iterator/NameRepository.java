@@ -1,4 +1,4 @@
-package iterator;
+package solutions.iterator;
 
 
 import java.util.*;
