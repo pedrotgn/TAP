@@ -8,6 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="hamcrest-core-1.31" level="project" />
-    <orderEntry type="library" name="junit-4.12" level="project" />
+    <orderEntry type="library" name="org.hamcrest:hamcrest-all:1.0" level="project" />
+    <orderEntry type="library" name="junit:junit:4.2" level="project" />
   </component>
 </module>

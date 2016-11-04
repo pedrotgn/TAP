@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="org.hamcrest:hamcrest-all:1.0" type="repository">
+    <properties maven-id="org.hamcrest:hamcrest-all:1.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-all-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
