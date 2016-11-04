@@ -7,8 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="ant:ant-junit:1.6.5" level="project" />
-    <orderEntry type="library" name="org.junit:com.springsource.org.junit:4.10.0" level="project" />
-    <orderEntry type="library" name="json-simple-1.1.1" level="project" />
+    <orderEntry type="library" name="hamcrest-core-1.31" level="project" />
+    <orderEntry type="library" name="junit-4.12" level="project" />
   </component>
 </module>
