@@ -1,0 +1,75 @@
+-- EXERCISES DATE:
+--------------------------------
+
+-- From Number structure that represents one number in its decimal and hexadecimal form:
+
+
+data Number = Num (Integer, String)
+
+-- Define "apply_if" function that receive one Number list apply an operation in those numbers that accomplish one condition
+
+-- ex. Main> apply_if (>15) (*2) [Num (10,"a"), Num (20,"14"), Num (30,"1e")]
+-- Num (40,"28"),Num (60,"3c")]  :: [Number]
+
+-- You can use hexadecimal function
+
+--------------------------------
+
+
+-- Create "apply" functions modifying function of previous exercise in order to:
+-- Before to apply functions, it verify if decimal and hexadecimal numbers are the same.
+-- In case that numbers are different, It remove this number from list.
+
+
+-- ex. Main> apply (>15) (*2) [Num (10,"a"), Num (20,"14"), Num (30,"fffff")]
+--           [Num (40,"28")] :: [Number]
+
+-- You can use "hexadecimal" and "decimal" functions
+
+
+--------------------------------
+
+
+-- Create "square" function that receive one Number list and it raise all numbers square.
+-- Parametrize partially "apply" function of previous exercise.
+
+
+-- ex. Main> square [Num (2,"2"), Num (3,"fffff"), Num (4,"4"), Num (5,"5")]
+-- [Num (4,"4"),Num (16,"10"),Num (25,"19")] :: [Number]
+
+
+--------------------------------
+
+
+-- The type of datum "Figure" can be one circle, defined by its radius.
+-- One triangle is defined by its base and height.
+-- One rectangle is defined by its base and height too.
+
+data Figure = Circle (Double) | Triangle (Double,Double) | Rectangle (Double,Double)
+
+-- Define "area" function that receive one figure and return its area.
+-- You can use "pi" constant that it's defined by system.
+
+
+-- ex. Main> area (Circle 3)
+--     28.2743338823081 :: Double
+-- ex. Main> area (Rectangle (2,3))
+--     6.0 :: Double
+-- ex. Main> area (Triangle (2,3))
+--     3.0 :: Double
+
+
+--------------------------------
+
+-- Implement "approved_list" that receive one student list with marks ,
+-- it returns one string with students that approved this subject, separated by '|'.
+-- For approve, it's necessary get at least a four in the mark of all exams and average of three exams is higher than 5.
+-- Use MAP, FILTER, FOLDRT and definition of Student.
+
+
+
+data Student = Alu String Double Double Double
+
+-- ex. Main> approved_list [Alu("Gandalf",9,10,9.5),Alu("Frodo",6,9,4),Alu("Sam",8,3,9), Alu("Merry",4,7,4.5),Alu("Pippin",4.5,5,4)]
+--  "Gandalf | Frodo | Merry" :: [Char]
+

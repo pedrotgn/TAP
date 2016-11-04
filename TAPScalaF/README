@@ -1,0 +1,46 @@
+
+Scala Lab
+-------------------------------------
+
+1. Hello, Types, Conditionals
+2. Functions, Curry, Closures, Closures2
+3. PatternMatching[1,2]
+4. Recursion: Recursion, Recursion2
+5. Lists, ListFunctions, Recursion3, ListRecursion, Maps
+6. CaseClasses, CaseClass2
+
+
+
+Exercises
+----------------------------------------
+
+1. Solve the following exercises:
+
+
+  a) Given the list if Integers from 1..100, return the list of odd numbers from this list, and then obtain the power of each element of the list
+     ex1 [1,2,3,4,5,6,7,8] -> [1,9,25,49]
+
+   b) Create a function ex2 that accepts a list of Ints,  one function that filter the list and one function that modifies the list (map)
+
+   c) Use currying and partial parametrization to create a new function evenapply that reuses ex2 for even numbers (filter function).
+
+   d) Create a function ex3 like ex2 but for any type in the list. Show examples with different types.
+
+2. Solve exercises in Exercises1.txt
+    Recursion
+
+3. Implement map, filter, and reduce in Scala
+    Use currying and inc function to create a mapinc function accepting a list and returning a list with all elems increased
+    mapinc (List(1,2,3) ->  List(2,3,4)
+
+4. Solve exercises2.txt and exercises3.txt in Scala.
+
+5. Create a List of Persons (name,phone, age).
+   a) Use the function reduce or fold to obtain the oldest person in the list
+   b) Obtain the phones of the persons whose age is greater than 40
+
+
+Refs
+---------------------------------------------
+Patterns in Scala:
+https://pavelfatin.com/design-patterns-in-scala/
