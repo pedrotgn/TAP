@@ -6,7 +6,7 @@ Scala Lab
 2. Functions, Curry, Closures, Closures2
 3. PatternMatching[1,2]
 4. Recursion: Recursion, Recursion2
-5. Lists, ListFunctions, Recursion3, ListRecursion, Maps
+5. Lists, ListFunctions, Recursion3, ListRecursion, Map, Maps
 6. CaseClasses, CaseClass2
 
 
@@ -29,9 +29,9 @@ Exercises
 2. Solve exercises in Exercises1.txt
     Recursion
 
-3. Implement map, filter, and reduce in Scala
-    Use currying and inc function to create a mapinc function accepting a list and returning a list with all elems increased
-    mapinc (List(1,2,3) ->  List(2,3,4)
+3. Implement filter and reduce in Scala
+    Use currying and demonstrate partial parametrization with both filter and reduce.
+
 
 4. Solve exercises2.txt and exercises3.txt in Scala.
 
