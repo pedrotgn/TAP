@@ -57,28 +57,6 @@ object Lists extends scala.App {
 
 
 
-     println (range.filter(_%2!=0).map(elem=>elem*elem))
-
-  def ex2(l:List[Int],f1:Int=>Boolean,f2:Int=>Int):List[Int]= l.filter(f1).map(f2)
-
-  def even(x:Int):Boolean = x%2==0
-
-  println (ex2(range.toList,even,elem=>elem*elem))
-
-
-
-  val evenapply = ex2(_:List[Int],even,_:Int=>Int)
-  println (evenapply(range.toList,elem=>elem*elem))
-
-
-  def ex3(f1:Int=>Boolean) (f2:Int=>Int) (l:List[Int])= l.filter(f1).map(f2)
-
-  println (ex3 (even) (elem=>elem*elem) (range.toList))
-
-  val evenapply2 = ex3 (even) (elem=>elem*elem) _
-
-  println (evenapply2  (range.toList))
-
 
 
 
