@@ -18,6 +18,7 @@ object Closures2 extends scala.App{
 
 
     println(convert("pedro",(elem)=>elem.toUpperCase))
+    println(convert("pedro",_.toUpperCase))
 
 
     println(convert2("pedro",(elem:String)=>elem.toUpperCase))
