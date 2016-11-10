@@ -17,6 +17,10 @@ object Functions extends scala.App{
       println (a+" "+ b)
   }
 
+  def showgeneric[T](m1:T,m2:T): Unit ={
+    println (m1+" "+ m2)
+  }
+
 
 
 
@@ -24,5 +28,8 @@ object Functions extends scala.App{
     show("showing:"+ concat("HOLA ","AMIGO"))
     show2(3,4)
     show2("a","b")
+    showgeneric("a","b")
+    showgeneric(1,2)
+
 
 }
