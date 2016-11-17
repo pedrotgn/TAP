@@ -25,9 +25,7 @@ Perform the following operations:
  Use max to obtain the account with the highest balance
  Combine filter and max to obtain the IF account with higher balance
 
-3. Repeat exercise 2 using for loops.
-
-4. Solve Exercise4.txt tree exercises.
+3. Solve Exercise4.txt tree exercises.
 
 Refs
 ---------------------------------------------
