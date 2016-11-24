@@ -14,7 +14,9 @@ Exercises
 
 Exercise 1. Implement the composite pattern (FileSystem) in Scala
 
-Exercise 2: We will import information from the accounts.txt file in CSV format (Comma separated values). Use Files.
+Exercise 2. Implement the singleton pattern in Scala
+
+Exercise 3: We will import information from the accounts.txt file in CSV format (Comma separated values). Use Files.
 Import this information in a List of Accounts where the four parameters correspond to:
   id :String, owner:String, kind:[IF,CA,BA,SA], balance:Int
   ** you do not need to use enums, use Strings **
@@ -25,7 +27,7 @@ Perform the following operations:
  Use max to obtain the account with the highest balance
  Combine filter and max to obtain the IF account with higher balance
 
-3. Solve Exercise4.txt tree exercises.
+4. Solve Exercise4.txt tree exercises.
 
 Refs
 ---------------------------------------------
