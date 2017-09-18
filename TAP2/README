@@ -23,7 +23,10 @@ Exercise 1: Implement filter function in Java.
  filter ([1,2,3,4],odd) ->  [1,3]
  
 
-Exercise 2:  Binary Search Tree
+Exercise 2. Using the Bank solution of TAP1, the goal is that Bank implements Itrable. Use the Java "for" iterator to traverse the Accounts in a Bank.
+
+
+Exercise 3:  Binary Search Tree
 https://en.wikipedia.org/wiki/Binary_search_tree
 
 A BSTree is a tree with two children: left one  and right one.
@@ -62,7 +65,7 @@ Example Main:
    System.out.println(elem);
 
 
-Exercise 3: We will import information from the accounts.txt file in CSV format (Comma separated values). Use TAP1/other/Tokens.
+Exercise 4: We will import information from the accounts.txt file in CSV format (Comma separated values). Use TAP1/other/Tokens.
 Import this information in a List of Accounts where the four parameters correspond to:
   id :String, owner:String, type:enum[IF,CA,BA,SA], balance:double
 Perform the following operations:

@@ -49,4 +49,6 @@ The problem must be implemented in Java, and create a test to check the function
 In particular, show the balances before and after a monthly revision.
 No creation of graphical or textual interface is required.
 
+2. Modify the "Client" class in the structures package to make it implement Comparable. Modify Test3 to check than sort no longer need a Comparator as second parameter.
+
 
