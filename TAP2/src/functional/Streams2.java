@@ -52,6 +52,11 @@ public class Streams2 {
         System.out.println("cnt:"+total);
 
 
+        List <Animal> ordered = people.stream().sorted((x,y)->x.getName().compareTo(y.getName())).collect(Collectors.toList());
+        System.out.println("sorted:"+ordered);
+
+
+
         List<Person> persons = Person.createShortList();
         Map<Gender, List<Person>> byGender
                 = persons.stream()
