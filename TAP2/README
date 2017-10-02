@@ -74,3 +74,17 @@ Perform the following operations:
  Use stream.max to obtain the account with the highest balance
  Combine filter and max to obtain the IF account with higher balance
 
+Exercise 5. The goal is to implement an algorithm that counts all words in a text file. The algorithm must
+return a Map<String,Integer> or Map<String,Long> where the key is the word and the value is the number of occurrences
+of that word.
+Check with the following files:
+https://www.gutenberg.org/cache/epub/2000/pg2000.txt
+http://norvig.com/big.txt
+http://mattmahoney.net/dc/enwik8.zip (uncompress first)
+
+
+
+Exercise 6. Use stream().parallel() to accelerate the previous algorithm for big files. You can use guava.AtomicLongMap if needed.
+Compare times in your machine.
+
+
