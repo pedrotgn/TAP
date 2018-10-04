@@ -64,8 +64,12 @@ Example Main:
  for (Integer elem:tree)
    System.out.println(elem);
 
+Exercise 4: In map2.Map, change the code to enable map return a different type of List<R>
+than the one passed by parameter List<T>. Show an example where from a list of Strings with map
+and a Lambda we can obtain a List<Integer> with the sizes of each String.
 
-Exercise 4: We will import information from the accounts.txt file in CSV format (Comma separated values). Use TAP1/other/Tokens.
+
+Exercise 5: We will import information from the accounts.txt file in CSV format (Comma separated values). Use TAP1/other/Tokens.
 Import this information in a List of Accounts where the four parameters correspond to:
   id :String, owner:String, type:enum[IF,CA,BA,SA], balance:double
 Perform the following operations:
@@ -74,7 +78,7 @@ Perform the following operations:
  Use stream.max to obtain the account with the highest balance
  Combine filter and max to obtain the IF account with higher balance
 
-Exercise 5. The goal is to implement an algorithm that counts all words in a text file. The algorithm must
+Exercise 6. The goal is to implement an algorithm that counts all words in a text file. The algorithm must
 return a Map<String,Integer> or Map<String,Long> where the key is the word and the value is the number of occurrences
 of that word.
 Check with the following files:
@@ -84,7 +88,7 @@ http://mattmahoney.net/dc/enwik8.zip (uncompress first)
 
 
 
-Exercise 6. Use stream().parallel() to accelerate the previous algorithm for big files. You can use guava.AtomicLongMap if needed.
+Exercise 7. Use stream().parallel() to accelerate the previous algorithm for big files. You can use guava.AtomicLongMap if needed.
 Compare times in your machine.
 
 
