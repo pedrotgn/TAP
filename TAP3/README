@@ -17,11 +17,17 @@ TAP 3: DESIGN PATTERNS
 Exercises:
 --------------
 
-0. Iterator. 
-   Modify the existing Iterator sample to use java,util.Iterable<T> and java.util.Iterator<T>
+
+1. Convert the adapter sample to a Class Adapter.
+2. Create a Counter Singleton that maintains a global counter with methods to increment and get the current value. Show a simple example.
+3. Modify the observer sample to count the number of invocations of observers. Use the Counter Singleton inside each Observer implementation (BinaryObserver, ...).
+   Show the final result of the Counter in the main program.
+4. Attach a new Observer using a Lambda Function that shows in the screen only the odd numbers. You will have to modify the Observer class to do this.
+5. Create a Message class with one single text property. Create a UpperCaseDecorator of Message that converts the message to upeercase (getText). Create an Insult Decorator that adds an insult to the text.
+ Create a FilterDecorator that replaces all appearances of "tonto" by xxx.
 
 
-1. FILESYSTEM
+6. FILESYSTEM
  ---------------------------------
 
    Based on the Composite pattern we will implement a basic file system supporting files and directories.
@@ -64,7 +70,11 @@ Exercises:
    2. Enable the iteration over directories with the for clause (Iterable)
    3. Use Comparator<T>, Collections.sort and Closures to order by name the list that is obtained by toList.
 
-2. FileSystem combining composite and visitor
+
+7. Modify the existing Iterator sample to use java,util.Iterable<T> and java.util.Iterator<T>
+
+
+8. FileSystem combining composite and visitor
 
 The problem of the previous solution is that every new operation that we want to apply to the entire tree must be added to the parent interface AComponent.
 This reminds us the classical Fragile Base Class problem of modifying parent classes in OOP.
@@ -73,7 +83,7 @@ we will be able to add any operation very easily using Visitors.
 Convert all operations [1-6] to Visitors and demonstrate them.
 
 
-3. ObserverList
+9. ObserverList
 
 The problem is to create an ObserverList collection that implements the observer design pattern.
 It will notify of  changes to the observers (notifyAdd and notifyRemove methods)

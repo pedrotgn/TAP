@@ -5,7 +5,7 @@ public class NitroDecorator extends Car{
 	private Car client;
 
 	public NitroDecorator(Car car) {
-		super(car.getDescription(),car.getPrice());
+		super("",0);
 		client = car;
 	}
 	

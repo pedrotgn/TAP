@@ -5,7 +5,7 @@ public class SpoilerDecorator extends Car{
 	private Car client;
 
 	public SpoilerDecorator(Car car) {
-		super(car.getDescription(),car.getPrice());
+		super("",0);
 		client = car;
 	}
 	
