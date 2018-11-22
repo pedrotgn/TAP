@@ -4,11 +4,47 @@
 
 //http://www.tutorialspoint.com/scala/scala_maps.htm
 
-object Maps {
-  def main(args: Array[String]) {
+object Maps extends scala.App {
+
     val colors = Map("red" -> "#FF0000",
       "azure" -> "#F0FFFF",
       "peru" -> "#C")
+
+
+
+   /* def mergeMaps(m1:Map[String,Int],m2:Map[String,Int]):Map[String,Int] = {
+      m1.
+
+    }*/
+
+
+    val newcolors = colors + ("pedro"->"#e343400")
+
+    println(newcolors)
+
+
+    val numbers = Map("red" -> 1,
+      "azure" -> 2,
+      "peru" -> 2)
+
+
+
+    val numbers2 = numbers + ("red"->6)
+    println(numbers2)
+
+
+
+    for ((k,v) <- numbers) printf("key: %s, value: %s\n", k, v)
+
+
+    // version 1 (tuples)
+    numbers foreach (x => println (x._1 + "-->" + x._2))
+
+    // version 2 (foreach and case)
+    numbers foreach {case (key, value) => println (key + "-->" + value)}
+
+
+
 
     val nums: scala.collection.mutable.Map[Int, Int] = scala.collection.mutable.Map()
 
@@ -30,5 +66,10 @@ object Maps {
 
     //colors("blue")="pedro"
     nums(55) = 100
-  }
+
+    
+  
+
+
+
 }
