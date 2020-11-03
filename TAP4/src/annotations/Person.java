@@ -8,7 +8,7 @@ package annotations;
 @Copyright(
         priority = Copyright.Priority.HIGH,
         createdBy = "pedro",
-        tags = {"tap","urv","gei"}
+        tags = {"tap", "urv", "gei"}
 )
 public class Person {
     private String name;
