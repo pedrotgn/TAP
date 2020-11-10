@@ -11,27 +11,36 @@ import static org.junit.Assert.assertEquals;
 public class TestEmployeeDetails {
 	
 	EmpBusinessLogic empBusinessLogic = new EmpBusinessLogic();
-	EmployeeDetails employee = new EmployeeDetails();
-	
-	//test to check appraisal
-	@Test
-	public void testCalculateAppriasal() {
-		System.out.println("testCalculateAppriasal");
+	EmployeeDetails employee;
+
+	@Before
+	public void setup() {
+		System.out.println("setup!");
+		employee = new EmployeeDetails();
 		employee.setName("Rajeev");
 		employee.setAge(25);
 		employee.setMonthlySalary(8000);
+	}
+
+	//test to check appraisal
+	@Test
+	public void testCalculateAppraisal() {
+		System.out.println("testCalculateAppraisal");
 		double appraisal= empBusinessLogic.calculateAppraisal(employee);
 		assertEquals(500, appraisal, 0.0);
 	}
 	
 	// test to check yearly salary
-	@After
+	@Test
 	public void testCalculateYearlySalary() {
 		System.out.println("testCalculateYearlySalary");
-		employee.setName("Rajeev");
-		employee.setAge(25);
-		employee.setMonthlySalary(8000);
 		double salary= empBusinessLogic.calculateYearlySalary(employee);
 		assertEquals(96000, salary, 0.0);
+	}
+
+	@After
+	public void tearDown() {
+		System.out.println("tear down!");
+		employee = null;
 	}
 }
