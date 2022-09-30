@@ -13,9 +13,13 @@
 3. Generics (generics,stacks)
 4. Functional Java 8 and closures (functional)
 5. Default methods (defaultmethods)
+6. Threads and Virtual Threads
 
 
+To configure IntelliJ for Experimental features
+https://foojay.io/today/how-to-run-project-loom-from-intellij-idea/
 
+Threads tutorial: https://docs.oracle.com/javase/tutorial/essential/concurrency/
 
 Exercise 1: Implement filter function in Java.
 
