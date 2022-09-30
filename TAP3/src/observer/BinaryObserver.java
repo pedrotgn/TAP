@@ -3,7 +3,7 @@ package observer;
 /**
  * Created by pedro on 10/7/16.
  */
-public class BinaryObserver extends Observer{
+public class BinaryObserver implements Observer{
 
 
 

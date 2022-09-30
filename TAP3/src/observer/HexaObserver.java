@@ -3,7 +3,7 @@ package observer;
 /**
  * Created by pedro on 10/7/16.
  */
-public class HexaObserver extends Observer{
+public class HexaObserver implements Observer{
 
 
     @Override

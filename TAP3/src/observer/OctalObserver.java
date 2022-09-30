@@ -3,7 +3,7 @@ package observer;
 /**
  * Created by pedro on 10/7/16.
  */
-public class OctalObserver extends Observer{
+public class OctalObserver implements Observer{
 
 
     @Override
