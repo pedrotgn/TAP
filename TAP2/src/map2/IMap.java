@@ -1,5 +1,5 @@
 package map2;
 
-public interface Imap<T> {
+public interface IMap<T> {
 	 T apply(T elem);
 }
