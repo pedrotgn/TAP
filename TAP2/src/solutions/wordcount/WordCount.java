@@ -3,6 +3,7 @@ package solutions.wordcount;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 public class WordCount {
@@ -20,23 +21,37 @@ public class WordCount {
         }
 
         // Option 1: for + hashmap
-        HashMap<String, Long> words = new HashMap<>();
+        HashMap<String, Long> wordsMap = new HashMap<>();
         for (String word : text) {
-            if (words.containsKey(word)) {
-                long value = words.get(word);
+            if (wordsMap.containsKey(word)) {
+                long value = wordsMap.get(word);
                 value += 1;
-                words.put(word, value);
+                wordsMap.put(word, value);
             } else {
-                words.put(word, 1L);
+                wordsMap.put(word, 1L);
             }
         }
 
-        System.out.println(words.get("Quijote"));
+        System.out.println(wordsMap.get("Quijote"));
 
-        // Option 2: stream
-        Map<String, Long> res = text.stream().collect(Collectors.groupingBy(w -> w, Collectors.counting()));
+        // Option 2: parallel stream
+        ConcurrentHashMap<String, Long> concurrentWordsMap = new ConcurrentHashMap<>();
+        text.stream().parallel().forEach(word -> {
+            if (concurrentWordsMap.containsKey(word)) {
+                long value = wordsMap.get(word);
+                value += 1;
+                concurrentWordsMap.put(word, value);
+            } else {
+                concurrentWordsMap.put(word, 1L);
+            }
+        });
 
-        System.out.println(res.get("Quijote"));
+        System.out.println(concurrentWordsMap.get("Quijote"));
+
+        // Option 3 (hard): stream
+        Map<String, Long> streamWordsMap = text.stream().collect(Collectors.groupingBy(w -> w, Collectors.counting()));
+
+        System.out.println(streamWordsMap.get("Quijote"));
 
     }
 }

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b6a419e-c707-43ab-a992-18d0d09502ac" name="Default" comment="" />
+    <list default="true" id="5b6a419e-c707-43ab-a992-18d0d09502ac" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solutions/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solutions/wordcount/WordCount.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,7 +153,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "/home/milax/TAP/TAP2"
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "/home/milax/TAP/TAP2",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -168,7 +178,7 @@
       <recent name="functional" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Map3Sample">
+  <component name="RunManager" selected="Application.MapSample">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -317,55 +327,13 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration name="FilterSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="solutions.filter2.FilterSample" />
+    <configuration name="MapSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="map2.MapSample" />
       <module name="TAP2" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="solutions.filter2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Map3Sample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="solutions.map3.Map3Sample" />
-      <module name="TAP2" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="solutions.filter2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tokens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="solutions.accounts.Tokens" />
-      <module name="TAP2" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="solutions.accounts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="solutions.wordcount.WordCount" />
-      <module name="TAP2" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="solutions.wordcount.*" />
+          <option name="PATTERN" value="map2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -379,13 +347,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="solutions.filter.FilterSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="solutions.filter.FilterSample" />
+    <configuration name="solutions.wordcount.WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="solutions.wordcount.WordCount" />
       <module name="TAP2" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="solutions.filter.*" />
+          <option name="PATTERN" value="solutions.wordcount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -461,18 +428,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.FilterSample" />
-      <item itemvalue="Application.Map3Sample" />
-      <item itemvalue="Application.Tokens" />
-      <item itemvalue="Application.WordCount" />
-      <item itemvalue="Application.solutions.filter.FilterSample" />
+      <item itemvalue="Application.MapSample" />
+      <item itemvalue="Application.solutions.wordcount.WordCount" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Map3Sample" />
-        <item itemvalue="Application.Tokens" />
-        <item itemvalue="Application.WordCount" />
-        <item itemvalue="Application.solutions.filter.FilterSample" />
+        <item itemvalue="Application.MapSample" />
+        <item itemvalue="Application.solutions.wordcount.WordCount" />
       </list>
     </recent_temporary>
   </component>
@@ -520,6 +482,17 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

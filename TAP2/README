@@ -3,7 +3,6 @@
 
 ------------------------------------------
 
-
  http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html CLOSURE TUTORIAL
  http://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html CLOSURE APIS
  http://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html   STREAM APIS
