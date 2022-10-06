@@ -3,8 +3,11 @@ package solutions.wordcount;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
+
+// Download JAR from https://repo1.maven.org/maven2/com/google/guava/guava/31.1-jre/
+// Add JAR dependency to IntelliJ: https://www.jetbrains.com/help/idea/working-with-module-dependencies.html
+import com.google.common.util.concurrent.*;
 
 public class WordCount {
     public static void main(String[] args) throws FileNotFoundException {
@@ -12,12 +15,12 @@ public class WordCount {
         ArrayList<String> text = new ArrayList<>();
         Scanner sc = new Scanner(new File("pg2000.txt"));
         while (sc.hasNext()) {
-            String word = "";
+            StringBuilder word = new StringBuilder();
             for (Character c : sc.next().toCharArray()) {
                 if (Character.isLetterOrDigit(c))
-                    word += c;
+                    word.append(c);
             }
-            text.add(word);
+            text.add(word.toString());
         }
 
         // Option 1: for + hashmap
@@ -35,18 +38,14 @@ public class WordCount {
         System.out.println(wordsMap.get("Quijote"));
 
         // Option 2: parallel stream
-        ConcurrentHashMap<String, Long> concurrentWordsMap = new ConcurrentHashMap<>();
+        AtomicLongMap<String> atomicMap = AtomicLongMap.create();
         text.stream().parallel().forEach(word -> {
-            if (concurrentWordsMap.containsKey(word)) {
-                long value = wordsMap.get(word);
-                value += 1;
-                concurrentWordsMap.put(word, value);
-            } else {
-                concurrentWordsMap.put(word, 1L);
-            }
+            atomicMap.incrementAndGet(word);
         });
+        // or also...
+//        text.stream().parallel().forEach(atomicMap::incrementAndGet);
 
-        System.out.println(concurrentWordsMap.get("Quijote"));
+        System.out.println(atomicMap.get("Quijote"));
 
         // Option 3 (hard): stream
         Map<String, Long> streamWordsMap = text.stream().collect(Collectors.groupingBy(w -> w, Collectors.counting()));
