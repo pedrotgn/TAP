@@ -19,12 +19,13 @@ public class VirtualThread {
             if (i%10_000 == 0) {
                 System.out.println(i);
             }
-            Thread.startVirtualThread(() -> {
+          //UNCOMMENT WHEN CONFIGURED ENVIRONMENT.
+            /*    Thread.startVirtualThread(() -> {
                 try {
                     Thread.sleep(Duration.ofMinutes(10).toMillis());
                 } catch (Exception e) {
                     e.printStackTrace();
-                }});
+                }});*/
         }
     }
 }
