@@ -7,7 +7,7 @@ import java.lang.annotation.Annotation;
  */
 public class ReflectMain {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         Class<Person> obj = Person.class;
 
            if (obj.isAnnotationPresent(Copyright.class)) {
