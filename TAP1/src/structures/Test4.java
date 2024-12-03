@@ -11,7 +11,7 @@ import java.util.Set;
 public class Test4 {
 
     public static void main(String[] args) {
-        Map<String, Client> dict = new HashMap<String, Client>();
+        Map<String, Client> dict = new HashMap<>();
         Client p1 = new Client("homer", 40);
         Client p2 = new Client("marge", 40);
         Client p3 = new Client("bart", 12);

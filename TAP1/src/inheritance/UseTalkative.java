@@ -7,7 +7,7 @@ public class UseTalkative {
 		Homer homer = new Homer();
 		Bart bart = new Bart();
 		
-		Talkative springfield [] =new Talkative [2]; 
+		Talkative[] springfield  =new Talkative [2];
 		springfield[0] = homer; 
 		springfield[1] = bart; 
 		

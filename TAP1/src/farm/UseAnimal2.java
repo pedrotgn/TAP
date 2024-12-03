@@ -11,7 +11,7 @@ public class UseAnimal2 {
 		MutantParrot lM = new MutantParrot(3, 3);
 
 		// Static list
-		Animal farm[] = new Animal[3];
+		Animal[] farm = new Animal[3];
 		farm[0] = a;
 		farm[1] = g;
 		farm[2] = lM;
@@ -20,7 +20,7 @@ public class UseAnimal2 {
 			System.out.println(ani.talk());
 
 		// Dynamic list
-		LinkedList<Animal> lorry = new LinkedList<Animal>();
+		LinkedList<Animal> lorry = new LinkedList<>();
 		lorry.add(a);
 		lorry.add(g);
 		lorry.add(lM);

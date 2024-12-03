@@ -8,12 +8,12 @@ import java.util.List;
  */
 public class ListSample {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         Person p1 = new Person("111","pedro",1);
         Person p2 = new Person("222","pep",2);
         Person p3 = new Person("333","pere",3);
 
-        List<Person> persons = new LinkedList<Person>();
+        List<Person> persons = new LinkedList<>();
 
         // What happens if Persons is not set in List ? Can we add a String to the List ? Where is the error ?
         //List persons = new LinkedList();

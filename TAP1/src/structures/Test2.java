@@ -1,19 +1,16 @@
 package structures;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Test2 {
 
-	public static void main(String args[]) {
-		List<String> c = new ArrayList<String>();
+	public static void main(String[] args) {
 
-		String lista[] = { "uno", "dos", "tres", "cuatro" };
 
-		for (String num : lista)
-			c.add(num);
+		String[] list = { "uno", "dos", "tres", "cuatro" };
+
+		List<String> c = Arrays.asList(list);
+
 
 		print(c);
 

@@ -2,7 +2,6 @@ package structures;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 public class Test3 {
@@ -14,12 +13,12 @@ public class Test3 {
 		System.out.println("-------------------------");
 	}
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Client p1 = new Client("jose", 30);
 		Client p2 = new Client("pedro", 24);
 		Client p3 = new Client("jcarlos", 100);
 
-		List<Client> c = new ArrayList<Client>();
+		List<Client> c = new ArrayList<>();
 		c.add(p1);
 		c.add(p2);
 		c.add(p3);
@@ -28,12 +27,13 @@ public class Test3 {
 		print(c);
 
 		NameComparator t1 = new NameComparator();
-		Collections.sort(c, t1);
+		c.sort(t1);
+		//Collections.sort(c, t1);
 		System.out.println("-Ordered by name--------");
 		print(c);
 
 		AgeComparator t2 = new AgeComparator();
-		Collections.sort(c, t2);
+		c.sort(t2);
 		System.out.println("-Ordered by age--------");
 		print(c);
 
