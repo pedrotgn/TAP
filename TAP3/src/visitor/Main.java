@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		TaxiVisitor taxiDriver = new HonoredTaxiVisitor();
 		
-		LinkedList<Person> clients = new LinkedList<Person>();
+		LinkedList<Person> clients = new LinkedList<>();
 		clients.add(new HastyPerson(5));
 		clients.add(new LeisurelyPerson(8));
 		

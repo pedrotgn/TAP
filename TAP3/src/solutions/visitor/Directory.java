@@ -12,7 +12,7 @@ public class Directory implements AComponent {
 
 	public Directory(String name) {
 		this.name = name;
-		children = new LinkedList<AComponent>();
+		children = new LinkedList<>();
 	}
 
 	public void addChild(AComponent child){

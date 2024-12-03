@@ -19,7 +19,7 @@ public class File implements AComponent {
 	}
 
 	public List<String> collect() {
-		List<String> result = new LinkedList<String>();
+		List<String> result = new LinkedList<>();
 		result.add(name);
 		return result;
 	}
@@ -55,7 +55,7 @@ public class File implements AComponent {
 	
 
 	public List<AComponent> toList() {
-		List<AComponent> result = new LinkedList<AComponent>();
+		List<AComponent> result = new LinkedList<>();
 		result.add(this);
 		return result;
 	}

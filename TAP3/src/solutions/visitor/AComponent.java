@@ -2,9 +2,9 @@ package solutions.visitor;
 
 import java.util.List;
 
-public interface AComponent {
-	public void ls();
-	public List<AComponent> toList();
-	public void setParent(AComponent parent);
-	public void accept(Visitor v);
+ interface AComponent {
+	 void ls();
+	 List<AComponent> toList();
+	 void setParent(AComponent parent);
+	 void accept(Visitor v);
 }

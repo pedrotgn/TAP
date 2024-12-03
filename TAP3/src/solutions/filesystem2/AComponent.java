@@ -2,12 +2,12 @@ package solutions.filesystem2;
 
 import java.util.List;
 
-public interface AComponent {
-	public void ls();
-	public List<String> collect();
-	public List<AComponent> toList();
-	public List<File> search(String name);
-	public int size();
-	public void setParent(AComponent parent);
-	public String getName();
+ interface AComponent {
+	 void ls();
+	 List<String> collect();
+	 List<AComponent> toList();
+	 List<File> search(String name);
+	 int size();
+	 void setParent(AComponent parent);
+	 String getName();
 }

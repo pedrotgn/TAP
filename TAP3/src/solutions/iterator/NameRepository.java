@@ -4,7 +4,7 @@ package solutions.iterator;
 import java.util.*;
 
 public class NameRepository implements Iterable<String> {
-    public String names[] = {"Robert" , "John" ,"Julie" , "Lora"};
+    public String[] names = {"Robert" , "John" ,"Julie" , "Lora"};
 
     @Override
     public java.util.Iterator<String> iterator() {
@@ -18,11 +18,7 @@ public class NameRepository implements Iterable<String> {
 
         @Override
         public boolean hasNext() {
-
-            if(index < names.length){
-                return true;
-            }
-            return false;
+            return index < names.length;
         }
 
         @Override

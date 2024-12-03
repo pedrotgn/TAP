@@ -1,8 +1,8 @@
 package visitor;
 
-public interface TaxiVisitor {
+ interface TaxiVisitor {
 	
-	public void visit(HastyPerson e);
-	public void visit(LeisurelyPerson e);
+	 void visit(HastyPerson e);
+	 void visit(LeisurelyPerson e);
 
 }

@@ -1,8 +1,8 @@
 package visitor;
 
 //Element
-public interface Person {
+ interface Person {
 
-	public void accept(TaxiVisitor v);
+	 void accept(TaxiVisitor v);
 	
 }

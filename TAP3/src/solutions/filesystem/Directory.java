@@ -12,7 +12,7 @@ public class Directory implements AComponent {
 
 	public Directory(String name) {
 		this.name = name;
-		children = new LinkedList<AComponent>();
+		children = new LinkedList<>();
 	}
 
 	public void addChild(AComponent child){
@@ -32,7 +32,7 @@ public class Directory implements AComponent {
 	}
 
 	public List<String> collect() {
-		List<String> result = new LinkedList<String>();
+		List<String> result = new LinkedList<>();
 		result.add(name);
 		for (AComponent child:children)
 			result.addAll(child.collect());
@@ -57,7 +57,7 @@ public class Directory implements AComponent {
 		return path + name;
 	}
 	public List<AComponent> toList() {
-		List<AComponent> result = new LinkedList<AComponent>();
+		List<AComponent> result = new LinkedList<>();
 		result.add(this);
 		for (AComponent child:children)
 			result.addAll(child.toList());
