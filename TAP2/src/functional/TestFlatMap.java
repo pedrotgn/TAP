@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class TestFlatMap {
 
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         List<Developer> team = new ArrayList<>();
         Developer polyglot = new Developer("esoteric");
         polyglot.add("clojure");

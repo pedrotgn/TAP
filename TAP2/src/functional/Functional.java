@@ -11,7 +11,7 @@ import java.util.function.Predicate;
  */
 public class Functional {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         Consumer<Integer>  c = (Integer x) -> { System.out.println(x); };
 

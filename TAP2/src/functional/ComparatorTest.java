@@ -14,7 +14,7 @@ public class ComparatorTest {
         List<Person> personList = Person.createShortList();
 
         // Sort with Inner Class
-        Collections.sort(personList, new Comparator<Person>() {
+        personList.sort(new Comparator<Person>() {
             public int compare(Person p1, Person p2) {
                 return p1.getSurName().compareTo(p2.getSurName());
             }
@@ -29,7 +29,7 @@ public class ComparatorTest {
 
         // Print Asc
         System.out.println("=== Sorted Asc SurName ===");
-        Collections.sort(personList, (Person p1, Person p2) -> p1.getSurName().compareTo(p2.getSurName()));
+        personList.sort((Person p1, Person p2) -> p1.getSurName().compareTo(p2.getSurName()));
 
         for (Person p : personList) {
             p.printName();
@@ -37,7 +37,7 @@ public class ComparatorTest {
 
         // Print Desc
         System.out.println("=== Sorted Desc SurName ===");
-        Collections.sort(personList, (p1, p2) -> p2.getSurName().compareTo(p1.getSurName()));
+        personList.sort((p1, p2) -> p2.getSurName().compareTo(p1.getSurName()));
 
         for (Person p : personList) {
             p.printName();

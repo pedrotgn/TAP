@@ -1,19 +1,19 @@
-package functional; /**
+package functional;
+/**
  *
  * http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
  */
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Streams {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
-        List<Animal> list = new LinkedList<Animal>();
+        List<Animal> list = new LinkedList<>();
 
         Animal a1 = new Animal("loro",24);
         Animal a2 = new Animal("oso",75);
@@ -38,10 +38,10 @@ public class Streams {
         result.forEach(System.out::println);
 
 
-        long number =  list.stream().filter(p -> p.getAge() > 30).collect(Collectors.counting());
+        long number =  list.stream().filter(p -> p.getAge() > 30).count();
         System.out.println("number "+number);
 
-        list.stream().filter(p -> p.getAge() > 30).count();
+        System.out.println(list.stream().filter(p -> p.getAge() > 30).count());
 
 
 

@@ -12,14 +12,14 @@ public class Map2 {
 
 
     public static <T> List<T> map(List<T> list, Function<T,T> f) {
-        List<T> result = new LinkedList<T>();
+        List<T> result = new LinkedList<>();
         for (T elem:list){
             result.add(f.apply(elem));
         }
         return result;
     }
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         List<String> elems = new LinkedList<>();
         elems.add("tap");
         elems.add("lp");

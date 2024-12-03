@@ -5,7 +5,7 @@ package defaultmethods;
  */
 public class DefaultTest {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         DefaultPerson p = new DefaultPerson();
         p.sayHello();
         p.blackCard();

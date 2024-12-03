@@ -14,9 +14,9 @@ import java.util.stream.Collectors;
 public class Streams2 {
 
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
-        List<Animal> people = new LinkedList<Animal>();
+        List<Animal> people = new LinkedList<>();
 
         Animal a1 = new Animal("loro", 24);
         Animal a2 = new Animal("oso", 75);
@@ -47,8 +47,9 @@ public class Streams2 {
 
         System.out.println(joined);
 
-        int total = people.stream()
-                .collect(Collectors.summingInt(Animal::getAge));
+        int total = people.stream().mapToInt(Animal::getAge).sum();
+
+
         System.out.println("cnt:"+total);
 
 
