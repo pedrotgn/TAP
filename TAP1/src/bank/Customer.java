@@ -6,8 +6,19 @@ package bank;
 public class Customer {
     private String id;
     private String name;
-    private String address;
-    private String phoneNumber;
+
+    public Customer(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public String getId(){
+        return id;
+    }
+
+    public String getName(){
+        return name;
+    }
 
     @Override
     public String toString() {
@@ -15,10 +26,5 @@ public class Customer {
                 "name='" + name + '\'' +
                 ", id='" + id + '\'' +
                 '}';
-    }
-
-    public Customer(String id, String name) {
-        this.id = id;
-        this.name = name;
     }
 }

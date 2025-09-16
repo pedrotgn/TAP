@@ -1,9 +1,12 @@
-package bank;
+package solutions.bank;
+
+import java.io.Serializable;
+
 
 /**
  * Created by pedro on 9/14/15.
  */
-public class Account {
+public class Account implements Serializable {
     protected double balance;
     private Customer owner;
     protected double interest;
@@ -26,7 +29,7 @@ public class Account {
     public void deposit(double amount){
         balance = balance + amount;
     }
-    public void withdraw(double amount) throws NoMoney{
+    public void withdraw(double amount) throws NoMoney {
         if (amount>balance)
             throw new NoMoney();
         else
