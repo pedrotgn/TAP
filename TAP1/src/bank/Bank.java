@@ -8,11 +8,13 @@ import java.util.List;
  */
 public class Bank {
     private String name;
-    private List<Account> accounts = new LinkedList<Account>();
-    private List<Customer> customers = new LinkedList<Customer>();
+    private List<Account> accounts;
+    private List<Customer> customers;
 
     public Bank(String name) {
         this.name = name;
+        accounts = new LinkedList<>();
+        customers = new LinkedList<>();
     }
 
     public void addAccount(Account newAccount){
@@ -24,6 +26,7 @@ public class Bank {
     public List<Account> getAccounts(){
         return accounts;
     }
+
     public void addCustomer(Customer newCustomer){
         customers.add(newCustomer);
     }
@@ -43,6 +46,4 @@ public class Bank {
         for (Account acc:accounts)
             acc.revision();
     }
-
-
 }

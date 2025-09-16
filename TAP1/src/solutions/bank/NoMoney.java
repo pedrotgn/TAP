@@ -1,4 +1,4 @@
-package bank;
+package solutions.bank;
 
 /**
  * Created by pedro on 9/14/15.
