@@ -1,5 +1,7 @@
 package solutions.bstree;
 
+import java.util.Comparator;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -14,6 +16,17 @@ public class Main {
 
 		for (Integer elem:arbol)
 			System.out.println(elem);
+
+		System.out.println(" ---------- ");
+
+		Comparator<Car> carComparator = Comparator.comparing(c -> c.name);
+
+		BSCarTree<Car> carTree = new BSCarTree<>(carComparator);
+		carTree.insert(new Car("Toyota"));
+		carTree.insert(new Car("Honda"));
+		carTree.insert(new Car("BMW"));
+
+		carTree.makeAllCarsClaxon();
 		
 	}
 

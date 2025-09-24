@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.function.Consumer;
 
 
 public class BSTree<T> implements Iterable<T>{
@@ -46,7 +47,14 @@ public class BSTree<T> implements Iterable<T>{
 		}
 		
 	}
-	
+
+	public void forEachNode(Consumer<T> action) {
+		if (data == null) return;
+		action.accept(data);
+		if (left != null) left.forEachNode(action);
+		if (right != null) right.forEachNode(action);
+	}
+
 	public boolean contains(T elem){
 		
 		if (data.equals(elem)){
