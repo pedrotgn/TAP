@@ -1,0 +1,12 @@
+[
+  { "timestamp": "2025-10-12T10:00:00Z", "sensorName": "BMSHV_Voltage", "value": 101.2 },
+  { "timestamp": "2025-10-12T10:00:01Z", "sensorName": "BMSHV_Voltage", "value": 104.7 },
+  { "timestamp": "2025-10-12T10:00:02Z", "sensorName": "Inv_Current", "value": 52.3 },
+  { "timestamp": "2025-10-12T10:00:03Z", "sensorName": "Inv_Current", "value": 55.1 },
+  { "timestamp": "2025-10-12T10:00:04Z", "sensorName": "Motor_Temperature", "value": 72.6 },
+  { "timestamp": "2025-10-12T10:00:05Z", "sensorName": "Motor_Temperature", "value": 73.4 },
+  { "timestamp": "2025-10-12T10:00:06Z", "sensorName": "BMSLV_Current", "value": 12.5 },
+  { "timestamp": "2025-10-12T10:00:07Z", "sensorName": "BMSLV_Current", "value": 13.0 },
+  { "timestamp": "2025-10-12T10:00:08Z", "sensorName": "Inv_Voltage_Actual", "value": 325.7 },
+  { "timestamp": "2025-10-12T10:00:09Z", "sensorName": "Inv_Voltage_Actual", "value": 327.4 }
+]
