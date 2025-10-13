@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        try (FileReader reader = new FileReader("TAP4/measurements.json")) {
+        try (FileReader reader = new FileReader("measurements.json")) {
             Gson gson = new Gson();
             Type listType = new TypeToken<List<Measurement>>() {}.getType();
             List<Measurement> measurements = gson.fromJson(reader, listType);
