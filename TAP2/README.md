@@ -1,0 +1,98 @@
+
+# LABORATORY 2:  Java 8
+
+------------------------------------------
+
+
+ http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html CLOSURE TUTORIAL
+ http://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html CLOSURE APIS
+ http://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html   STREAM APIS
+
+1. Map in Java (map,map2)
+2. Java 1.5 (other)
+3. Generics (generics,stacks)
+4. Functional Java 8 and closures (functional)
+5. Default methods (defaultmethods)
+6. Threads and Virtual Threads
+
+
+To configure IntelliJ for Experimental features
+https://foojay.io/today/how-to-run-project-loom-from-intellij-idea/
+
+Threads tutorial: https://docs.oracle.com/javase/tutorial/essential/concurrency/
+
+Exercise 1: Implement filter function in Java.
+
+ odd x = (x%2)!=0
+ filter ([1,2,3,4],odd) ->  [1,3]
+ 
+
+Exercise 2. Using the Bank solution of TAP1, the goal is that Bank implements Itrable. Use the Java "for" iterator to traverse the Accounts in a Bank.
+
+
+Exercise 3:  Binary Search Tree
+https://en.wikipedia.org/wiki/Binary_search_tree
+
+A BSTree is a tree with two children: left one  and right one.
+It must meet the property that each node of the tree contains an element that is higher than
+the element on the left and lower than the element of the right branch. To insert an item
+the tree you must first recursively search the position of the tree where you must insert the new data.
+To find an item in the tree you also need to to search recursively the right position.
+
+Implement methods to insert an item in the tree and a method contains (element) that tells us if
+the tree containing the element. Note that element may be of any type.
+
+1) Insert in a BSTree of Integers the following values: 5,3,6,1,4 and then search if contains 4 and 6.
+Recommendation: Use Comparator<T> in the constructor if BSTree to allow comparison
+between nodes of the tree.
+
+2) Make the BSTree iterable with the new loop of JDK 1.5
+
+3) Make another version of BSTree which will not pass the Comparator in the constructor.
+Instead assume that the elements containing the tree implement the Comparable interface.
+
+4) Create a BSTree of Cars in a Main.
+
+5) Subclass BSTree using bounded type parameters to create a BSCarTree. Create a method in Car called claxon that prints
+ "MEEEC". Then create a method in BSCarTree that invokes claxon in the tree of cars in a recursive way.
+
+Example Main:
+ BSTree<Integer> tree = new BSTree<Integer>(new Comparaint());
+ tree.insert(5);
+ tree.insert(3);
+ tree.insert(6);
+ tree.insert(1);
+ tree.insert(4);
+ System.out.println(tree.contains(4));
+ System.out.println(tree.contains(8));
+ for (Integer elem:tree)
+   System.out.println(elem);
+
+Exercise 4: In map2.Map, change the code to enable map return a different type of List<R>
+than the one passed by parameter List<T>. Show an example where from a list of Strings with map
+and a Lambda we can obtain a List<Integer> with the sizes of each String.
+
+
+Exercise 5: We will import information from the accounts.txt file in CSV format (Comma separated values). Use TAP1/other/Tokens.
+Import this information in a List of Accounts where the four parameters correspond to:
+  id :String, owner:String, type:enum[IF,CA,BA,SA], balance:double
+Perform the following operations:
+ Use stream.map to increment the balance of all accounts in 10 euros
+ Use stream.filter to obtain all account of type IF
+ Use stream.max to obtain the account with the highest balance
+ Combine filter and max to obtain the IF account with higher balance
+
+Exercise 6. The goal is to implement an algorithm that counts all words in a text file. The algorithm must
+return a Map<String,Integer> or Map<String,Long> where the key is the word and the value is the number of occurrences
+of that word.
+Check with the following files:
+https://www.gutenberg.org/cache/epub/2000/pg2000.txt
+http://norvig.com/big.txt
+http://mattmahoney.net/dc/enwik8.zip (uncompress first)
+
+
+
+Exercise 7. Use stream().parallel() to accelerate the previous algorithm for big files. You can use guava.AtomicLongMap if needed.
+Compare times in your machine.
+
+
