@@ -9,10 +9,10 @@ import java.lang.reflect.Proxy;
  * Created by milax on 20/10/15.
  */
 public class DynamicProxy implements InvocationHandler {
-    private Object target = null;
+    private final Object target;
     public static Object newInstance(Object target){
-        Class targetClass = target.getClass();
-        Class interfaces[] = targetClass.getInterfaces();
+        Class<?> targetClass = target.getClass();
+        Class<?>[] interfaces = targetClass.getInterfaces();
         return Proxy. newProxyInstance(targetClass.getClassLoader(),
                 interfaces, new DynamicProxy(target));
     }
@@ -20,7 +20,7 @@ public class DynamicProxy implements InvocationHandler {
         this.target = target;
     }
 
-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable{
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Object invocationResult = null;
         try
         {
@@ -36,9 +36,7 @@ public class DynamicProxy implements InvocationHandler {
         {
             System.err.println("Invocation of " + method.getName() + " failed");
         }
-        finally{
-            return invocationResult;
-        }
+        return invocationResult;
     }
 
 }
